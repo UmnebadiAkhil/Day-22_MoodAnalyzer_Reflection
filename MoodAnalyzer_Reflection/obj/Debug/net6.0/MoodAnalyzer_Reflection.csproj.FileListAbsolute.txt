@@ -1,0 +1,15 @@
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\MoodAnalyzer_Reflection.exe
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\MoodAnalyzer_Reflection.deps.json
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\MoodAnalyzer_Reflection.runtimeconfig.json
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\MoodAnalyzer_Reflection.dll
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\ref\MoodAnalyzer_Reflection.dll
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\bin\Debug\net6.0\MoodAnalyzer_Reflection.pdb
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.csproj.AssemblyReference.cache
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.AssemblyInfoInputs.cache
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.AssemblyInfo.cs
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.csproj.CoreCompileInputs.cache
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.dll
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\ref\MoodAnalyzer_Reflection.dll
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.pdb
+C:\Users\akhil\OneDrive\Desktop\TerminalCommands\RFP\Day-22_MoodAnalyzer_Reflection\MoodAnalyzer_Reflection\obj\Debug\net6.0\MoodAnalyzer_Reflection.genruntimeconfig.cache

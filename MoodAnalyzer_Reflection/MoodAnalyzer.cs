@@ -9,7 +9,12 @@ namespace MoodAnalyzer_Reflection
     public class MoodAnalyser
     {
         public string message;
-        
+
+        public MoodAnalyser()
+        {
+
+        }
+
         public MoodAnalyser(string message)
         {
             this.message = message;
@@ -17,13 +22,15 @@ namespace MoodAnalyzer_Reflection
 
         public string AnalyseMood()
         {
-            string? mood;
-            if (message == "I am in a Happy mood")
+            string mood;
+            try
+            {
+                mood = this.message.Contains("Sad") || this.message.Contains("sad") ? "Sad" : "Happy";
+            }
+            catch
+            {
                 mood = "Happy";
-            else if (message == "I am in a Sad mood")
-                mood = "Sad";
-            else
-                mood = null;
+            }
             return mood;
         }
     }
