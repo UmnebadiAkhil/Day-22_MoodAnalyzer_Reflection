@@ -6,9 +6,7 @@ namespace MS_Test_MoodAnalyzerReflection
     [TestClass]
     public class UnitTest1
     {
-
-        /* UC2:- Handle Exception if User Provides Invalid Mood
-         */
+        
         [TestMethod]
         public void GivenSadMessage_ShouldReturn_SadMood()
         {
@@ -20,9 +18,7 @@ namespace MS_Test_MoodAnalyzerReflection
             Assert.AreEqual("Sad", mood);
         }
 
-        /* TC 2.1:- Given Null Mood Should Return Happy.
-                   - To make this Test Case pass Handle NULL Scenario using try catch and return Happy.
-        */
+       
         [TestMethod]
         public void GivenHappyMessage_ShouldReturn_HappyMood()
         {
@@ -33,18 +29,35 @@ namespace MS_Test_MoodAnalyzerReflection
             //Assert
             Assert.AreEqual("Happy", mood);
         }
-        /* TC 3.1:- NULL Given NULL Mood Should Throw MoodAnalysisException
-                    To pass this Test Case in try catch block throw MoodAnalysisException
-         */
+
         [TestMethod]
-        public void GivenInvalidInput_ShouldReturn_HappyMood()
+        public void GivenEmptyMood_WhenAnalysed_ShouldThrow_MoodAnalysisExceptionIndicatingEmptyMood()
         {
-            //Arrange
-            MoodAnalyser analyser = new MoodAnalyser();
-            //Act
-            string mood = analyser.AnalyseMood();
-            //Assert
-            Assert.AreEqual("Happy", mood);
+            try
+            {
+                string message = string.Empty;
+                MoodAnalyser mood = new MoodAnalyser(message);
+                string moodStr = mood.AnalyseMood();
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Mood should not be empty", e.Message);
+            }
+        }
+
+        [TestMethod]
+        public void GivenNULLMood_WhenAnalysed_ShouldThrow_MoodAnalysisExceptionIndicatingNULLMood()
+        {
+            try
+            {
+                string message = null;
+                MoodAnalyser moodAnalyse = new MoodAnalyser(message);
+                string mood = moodAnalyse.AnalyseMood();
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Mood should not be null", e.Message);
+            }
         }
     }
-    }
+}
