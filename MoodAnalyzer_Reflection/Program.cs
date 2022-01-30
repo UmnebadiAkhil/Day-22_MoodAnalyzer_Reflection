@@ -9,5 +9,5 @@ namespace MoodAnalyzer_Reflection
             Console.WriteLine("Welcome to Mood Analyser App!");
         }
     }
-    }
+    
 }

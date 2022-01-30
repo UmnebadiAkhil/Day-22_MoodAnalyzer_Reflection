@@ -9,10 +9,7 @@ namespace MoodAnalyzer_Reflection
     public class MoodAnalyser
     {
         public string message;
-        //public MoodAnalyser()
-        //{
-        //}
-
+        
         public MoodAnalyser(string message)
         {
             this.message = message;
@@ -20,7 +17,7 @@ namespace MoodAnalyzer_Reflection
 
         public string AnalyseMood()
         {
-            string mood;
+            string? mood;
             if (message == "I am in a Happy mood")
                 mood = "Happy";
             else if (message == "I am in a Sad mood")
