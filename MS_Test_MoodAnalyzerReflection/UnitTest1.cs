@@ -165,5 +165,31 @@ namespace MS_Test_MoodAnalyzerReflection
             object actual = MoodAnalyserFactory.CreateObjectOfMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.MoodAnalyser", "MoodAnalyser");
             Assert.AreEqual(expected.GetType(), actual.GetType());
         }
+
+        // Givens the happy message should return happy mood.
+   
+        [TestMethod]
+        public void GivenHappyMessage_ShouldReturnHappyMood()
+        {
+            string expected = "Happy";
+            string result = MoodAnalyserReflector.InvokeAnalyseMood("Happy", "AnalyseMood");
+            Assert.AreEqual(expected, result);
+        }
+
+ 
+        // Givens the improper method should throw mood analyser custom exception.
+       
+        [TestMethod]
+        public void GivenImproperMethod_ShouldThrowMoodAnalyserCustomException()
+        {
+            try
+            {
+                string result = MoodAnalyserReflector.InvokeAnalyseMood("Happy", "Analyse");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("No such method found", e.Message);
+            }
+        }
     }
 }
