@@ -191,5 +191,21 @@ namespace MS_Test_MoodAnalyzerReflection
                 Assert.AreEqual("No such method found", e.Message);
             }
         }
+
+        // Givens the null message should throw mood analyser custom exception.
+     
+        [TestMethod]
+        public void GivenNullMessage_ShouldThrowMoodAnalyserCustomException()
+        {
+            try
+            {
+                string message = null;
+                string result = MoodAnalyserReflector.SetField(message, "message");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Message cannot be null", e.Message);
+            }
+        }
     }
 }
