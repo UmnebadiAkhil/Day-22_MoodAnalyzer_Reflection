@@ -111,5 +111,59 @@ namespace MS_Test_MoodAnalyzerReflection
                 Assert.AreEqual("Constructor not found", e.Message);
             }
         }
+
+        // Givens the mood analyser when analysed using parameterized constructor should return mood analyser object.
+       
+        [TestMethod]
+        public void GivenMoodAnalyser_WhenAnalysed_UsingParameterizedConstructor_ShouldReturnMoodAnalyserObject()
+        {
+            object expected = new MoodAnalyser();
+            object actual = MoodAnalyserFactory.CreateObjectOfMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.MoodAnalyser", "MoodAnalyser", "Happy");
+            Assert.AreEqual(expected.GetType(), actual.GetType());
+        }
+
+       
+        // Givens the improper class name when analyse using parameterised constructor should throw mood analysis exception.
+      
+        [TestMethod]
+        public void GivenImproperClassName_WhenAnalyse_UsingParameterisedConstructor_ShouldThrowMoodAnalysisException()
+        {
+            try
+            {
+                object expected = new MoodAnalyser();
+                object actual = MoodAnalyserFactory.CreateObjectOfMoodAnalyserUsingParameterizedConstructor("Mood", "MoodAnalyser", "Happy");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("No such class found", e.Message);
+            }
+        }
+
+        // Givens the improper constructor name when analyse using parameterised constructor should throw mood analysis exception.
+        
+        [TestMethod]
+        public void GivenImproperConstructorName_WhenAnalyse_UsingParameterisedConstructor_ShouldThrowMoodAnalysisException()
+        {
+            try
+            {
+                object expected = new MoodAnalyser();
+                object actual = MoodAnalyserFactory.CreateObjectOfMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.MoodAnalyser", "Mood", "Happy");
+            }
+            catch (MoodAnalyserCustomException e)
+            {
+                Assert.AreEqual("Constructor not found", e.Message);
+            }
+        }
+
+      
+        // Givens the mood analyser without message when analysed using parameterized constructor should return mood analyser object.
+      
+        [TestMethod]
+        public void GivenMoodAnalyserWithoutMessage_WhenAnalysed_UsingParameterizedConstructor_ShouldReturnMoodAnalyserObject()
+        {
+            object expected = new MoodAnalyser();
+            object actual = MoodAnalyserFactory.CreateObjectOfMoodAnalyserUsingParameterizedConstructor("MoodAnalyserApp.MoodAnalyser", "MoodAnalyser");
+            Assert.AreEqual(expected.GetType(), actual.GetType());
+        }
     }
 }

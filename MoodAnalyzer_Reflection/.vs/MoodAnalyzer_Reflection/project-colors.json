@@ -5,7 +5,12 @@
       "ProjectGuid": "bb1b44cf-5ad7-45ca-bf44-c277bbb06d10",
       "DisplayName": "MoodAnalyzer_Reflection",
       "ColorIndex": 0
+    },
+    "91e705ff-a49e-4071-bdd7-b7bf961914c6": {
+      "ProjectGuid": "91e705ff-a49e-4071-bdd7-b7bf961914c6",
+      "DisplayName": "MS_Test_MoodAnalyzerReflection",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
